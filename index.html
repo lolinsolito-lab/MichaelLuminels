@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luminel Way | High-Reliability Architecture</title>
+    
+    <!-- Favicon d'Elite - The Sovereign Prism -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='46' stroke='%23D4AF37' stroke-width='3' stroke-opacity='0.2'/%3E%3Cpath d='M38 28V72H72' stroke='%23D4AF37' stroke-width='8' stroke-linecap='square'/%3E%3Cpath d='M32 66L68 30' stroke='%23D4AF37' stroke-width='4' stroke-dasharray='8 8' stroke-opacity='0.6'/%3E%3Ccircle cx='68' cy='30' r='10' fill='%23D4AF37'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Cormorant Garamond', 'serif'],
+            },
+            borderRadius: {
+              '45xl': '45px',
+            },
+            colors: {
+              radiant: {
+                bg: '#FDFCFB',
+                surface: '#F5F5F4',
+                champagne: '#D4AF37',
+                gold: '#C5A059',
+                text: '#1C1917',
+                muted: '#8C8C8C',
+              },
+              iridescent: {
+                start: '#E0F2FE',
+                end: '#FDFCFB',
+              }
+            },
+            boxShadow: {
+              'trayce-glow': '0 0 60px rgba(224, 242, 254, 0.4)',
+              'pearl-skeuo': 'inset 0 2px 4px rgba(255,255,255,1), 0 10px 40px rgba(0,0,0,0.02)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      * { scroll-behavior: smooth; }
+      body {
+        background: #FDFCFB;
+        color: #1C1917;
+        cursor: none;
+        overflow-x: hidden;
+      }
+      .luxury-glass {
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
+        border: 1px solid rgba(212, 175, 55, 0.1);
+      }
+      .iridescent-bg {
+        background: linear-gradient(135deg, #FDFCFB 0%, #E0F2FE 50%, #FDFCFB 100%);
+        background-size: 200% 200%;
+        animation: iris-flow 15s ease infinite;
+      }
+      @keyframes iris-flow {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      .gold-gradient-text {
+        background: linear-gradient(135deg, #D4AF37 0%, #C5A059 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      #custom-cursor {
+        width: 6px;
+        height: 6px;
+        background: #D4AF37;
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        z-index: 9999;
+      }
+      #custom-cursor-follower {
+        width: 34px;
+        height: 34px;
+        border: 0.5px solid rgba(212, 175, 55, 0.2);
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        z-index: 9998;
+        transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .cursor-active #custom-cursor-follower {
+        transform: scale(1.8);
+        background: rgba(212, 175, 55, 0.03);
+        border-color: rgba(212, 175, 55, 0.5);
+      }
+      .bento-card {
+        border-radius: 45px;
+        transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .holographic-bar {
+        background: linear-gradient(90deg, #D4AF37, #E0F2FE, #C5A059, #FDFCFB);
+        background-size: 300% 100%;
+        animation: progress-flow 4s linear infinite;
+      }
+      @keyframes progress-flow {
+        0% { background-position: 100% 0%; }
+        100% { background-position: -200% 0%; }
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0?external=react",
+    "framer-motion": "https://esm.sh/framer-motion@11.11.11?external=react,react-dom",
+    "@google/genai": "https://esm.sh/@google/genai@0.21.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.45.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+  </head>
+  <body class="antialiased selection:bg-radiant-champagne/10 selection:text-radiant-text">
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-follower"></div>
+    <div id="root"></div>
+    <script>
+      const cursor = document.getElementById('custom-cursor');
+      const follower = document.getElementById('custom-cursor-follower');
+      let mouseX = 0, mouseY = 0;
+      let followerX = 0, followerY = 0;
+
+      document.addEventListener('mousemove', e => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        cursor.style.left = mouseX - 3 + 'px';
+        cursor.style.top = mouseY - 3 + 'px';
+      });
+
+      const tick = () => {
+        followerX += (mouseX - followerX - 17) * 0.1;
+        followerY += (mouseY - followerY - 17) * 0.1;
+        follower.style.left = followerX + 'px';
+        follower.style.top = followerY + 'px';
+        requestAnimationFrame(tick);
+      };
+      tick();
+
+      document.addEventListener('mouseover', e => {
+        if (e.target.closest('button, a, .interactive')) document.body.classList.add('cursor-active');
+        else document.body.classList.remove('cursor-active');
+      });
+    </script>
+  </body>
+</html>
