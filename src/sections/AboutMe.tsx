@@ -30,8 +30,8 @@ const AboutMe: React.FC = () => {
             </div>
             {/* Firma Digitale */}
             <div className="absolute -bottom-10 -right-10 p-12 bg-radiant-gold/10 backdrop-blur-2xl rounded-[50px] border border-radiant-gold/20 shadow-2xl">
-               <p className="font-serif italic text-3xl gold-gradient-text">Michael Jara</p>
-               <p className="text-[10px] font-mono tracking-[0.4em] uppercase mt-3 text-radiant-gold font-bold italic">Fondatore di Luminel Way</p>
+               <p className="font-serif italic text-3xl gold-gradient-text">Michael Luminel</p>
+               <p className="text-[10px] font-mono tracking-[0.4em] uppercase mt-3 text-radiant-gold font-bold italic">Principal Architect</p>
             </div>
           </motion.div>
 
@@ -52,19 +52,19 @@ const AboutMe: React.FC = () => {
 
             <div className="space-y-10 text-xl md:text-2xl font-light text-white/40 leading-relaxed tracking-wide italic font-sans text-justify">
               <p>
-                La mia mente è stata forgiata dove il caos non è un'opzione. Tra i corridoi della <span className="text-white font-medium italic underline decoration-radiant-gold/20">Procura della Repubblica</span>, ho operato al fianco di magistrati e inquirenti, gestendo la complessità e la sicurezza in ambienti dove ogni dato è un'arma e ogni secondo conta. 
+                La mia mente è stata forgiata in ecosistemi in cui il caos non è un'opzione, ma un rischio fatale. Tra i corridoi della <span className="text-white font-medium italic underline decoration-radiant-gold/20">Procura della Repubblica</span>, ho operato a fianco di magistrati e organi inquirenti, dove ogni dato è un'arma e la sicurezza dei flussi informativi decreta la vita o la morte di un'operazione.
               </p>
               
               <p>
-                In <span className="text-white font-medium">Capgemini</span>, ho proiettato questa disciplina sull'architettura dei flussi aziendali globali. Ho visto come le macchine sanno gestire l'ordine meglio degli esseri umani.
+                In <span className="text-white font-medium">Capgemini</span>, ho proiettato questa disciplina sull'architettura dei flussi aziendali globali. L'essere umano fallisce dove la macchina eccelle. Non hai bisogno di più tempo. Hai bisogno di un'infrastruttura inattaccabile.
               </p>
 
               <blockquote className="border-l-4 border-radiant-gold pl-12 py-6 italic text-3xl md:text-4xl text-white font-serif leading-tight tracking-tight">
-                "Ho capito che l'essere umano non ha bisogno di più tempo, ma di un'architettura migliore."
+                "Applichiamo alla tua struttura privata e finanziaria lo stesso livello di rigore e isolamento di un'indagine forense."
               </blockquote>
 
               <p>
-                Oggi, ho distillato quel rigore istituzionale e quella precisione tecnologica nel <span className="text-radiant-gold font-medium italic">Protocollo Luminel</span>. Non sono qui per motivarti. Sono qui per riprogettare il tuo sistema operativo interiore e restituirti il comando.
+                Oggi, ho distillato quel rigore istituzionale nel <span className="text-radiant-gold font-medium italic">Protocollo Luminel</span>. Non offro motivazione. Non vendo corsi. Offro il reset del tuo sistema operativo: un'ingegnerizzazione completa della tua infrastruttura di vita e di business.
               </p>
             </div>
 
@@ -74,21 +74,21 @@ const AboutMe: React.FC = () => {
                 <div className="p-4 bg-white/5 w-fit rounded-2xl group-hover:bg-radiant-gold/10 transition-colors">
                   <Shield className="text-radiant-gold" size={24} strokeWidth={1} />
                 </div>
-                <h4 className="text-[11px] font-mono uppercase tracking-[0.4em] text-white font-bold italic">Rigore</h4>
-                <p className="text-[9px] text-white/20 uppercase tracking-widest italic font-bold">Ex Procura della Rep.</p>
+                <h4 className="text-[11px] font-mono uppercase tracking-[0.4em] text-white font-bold italic">Rigore Forense</h4>
+                <p className="text-[9px] text-white/20 uppercase tracking-widest italic font-bold">Ex Procura della Repubblica</p>
               </div>
               <div className="space-y-4 group cursor-default">
                 <div className="p-4 bg-white/5 w-fit rounded-2xl group-hover:bg-radiant-gold/10 transition-colors">
                   <Database className="text-radiant-gold" size={24} strokeWidth={1} />
                 </div>
-                <h4 className="text-[11px] font-mono uppercase tracking-[0.4em] text-white font-bold italic">Sistemi</h4>
-                <p className="text-[9px] text-white/20 uppercase tracking-widest italic font-bold">Analyst Capgemini</p>
+                <h4 className="text-[11px] font-mono uppercase tracking-[0.4em] text-white font-bold italic">Architettura di Flusso</h4>
+                <p className="text-[9px] text-white/20 uppercase tracking-widest italic font-bold">Business Analyst · Capgemini</p>
               </div>
               <div className="space-y-4 group cursor-default">
                 <div className="p-4 bg-white/5 w-fit rounded-2xl group-hover:bg-radiant-gold/10 transition-colors">
                   <PenTool className="text-radiant-gold" size={24} strokeWidth={1} />
                 </div>
-                <h4 className="text-[11px] font-mono uppercase tracking-[0.4em] text-white font-bold italic">Design</h4>
+                <h4 className="text-[11px] font-mono uppercase tracking-[0.4em] text-white font-bold italic">Design Sovrano</h4>
                 <p className="text-[9px] text-white/20 uppercase tracking-widest italic font-bold">Luxury Transformation</p>
               </div>
             </div>

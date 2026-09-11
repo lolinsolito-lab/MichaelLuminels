@@ -11,36 +11,39 @@ interface PricingProps {
 const Pricing: React.FC<PricingProps> = ({ onSelect }) => {
   const tiers = [
     {
-      name: "Luminel Pulse",
-      price: "29",
-      period: "/mese",
-      desc: "Il tuo Daily Alignment. Un abbonamento alla chiarezza quotidiana.",
-      features: ["Daily Pulse: Bit di Sincronia", "Accesso alla Newsroom", "Status Badge Silver"],
-      cta: "Entra nel Club",
-      icon: <Zap size={24} />,
+      name: "Protocol 01",
+      subtitle: "Sovereign Sync",
+      price: "2.500",
+      period: "su selezione",
+      desc: "Upgrade sistemico assistito. Integrazione dell'intelligenza architettonica nei tuoi flussi critici. Automazione delegata e ripristino della sovranità sul tempo.",
+      features: [
+        "Audit Patrimoniale d'Élite (72h)",
+        "Ingegnerizzazione dei Flussi Critici",
+        "Dashboard Sovereign Sync",
+        "Filtro e Automazione del Rumore Operativo",
+        "Reporting Mensile Forense"
+      ],
+      cta: "Candidati per il Protocol 01",
+      icon: <ShieldCheck size={24} />,
       highlight: false,
       theme: "light"
     },
     {
-      name: "Luminel Sync",
-      price: "490",
-      period: "/21gg",
-      desc: "Percorso trasformativo assistito. Sincronia totale dei flussi.",
-      features: ["Upgrade di Sistema (21gg)", "Dashboard Sovereign Sync", "Audit Architetturale"],
-      cta: "Inizia Sincronia",
-      icon: <Sparkles size={24} />,
-      highlight: true,
-      theme: "light"
-    },
-    {
-      name: "The Architect",
-      price: "1.490",
-      period: "/upgrade",
-      desc: "L'esperienza d'élite. Progettazione diretta con Michael Jara.",
-      features: ["3 Sessioni con l'Architetto", "Design Istituzionale Custom", "Supporto Prioritario"],
-      cta: "Diventa Sovrano",
+      name: "Protocol 02",
+      subtitle: "The Architect Private Office",
+      price: "Riservato",
+      period: "su candidatura diretta",
+      desc: "Ingegnerizzazione totale e diretta con Michael Luminel. Per famiglie imprenditoriali e founder di alto profilo che richiedono infrastrutture IA proprietarie e schermatura totale del capitale attentivo.",
+      features: [
+        "Accesso Diretto a Michael Luminel",
+        "Sviluppo Infrastruttura IA Proprietaria",
+        "Schermatura Totale del Capitale Attentivo",
+        "Ottimizzazione Biologico-Sistemica",
+        "Protezione Anti-Infiltrazione Digitale"
+      ],
+      cta: "Richiedi Accesso al Private Office",
       icon: <Crown size={24} />,
-      highlight: false,
+      highlight: true,
       theme: "dark"
     }
   ];
@@ -51,53 +54,65 @@ const Pricing: React.FC<PricingProps> = ({ onSelect }) => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-48 space-y-8">
-          <span className="text-[11px] font-mono tracking-[0.5em] text-radiant-gold uppercase font-bold italic">Upgrade Sistemici</span>
+          <span className="text-[11px] font-mono tracking-[0.5em] text-radiant-gold uppercase font-bold italic">Selezione & Accesso</span>
           <h3 className="text-7xl md:text-[9rem] font-serif text-radiant-text leading-[0.8] tracking-tighter">
-            Architetture di <br /> 
-            <span className="gold-gradient-text italic font-light">Valore.</span>
+            Il Board non è <br /> 
+            <span className="gold-gradient-text italic font-light">aperto al mercato.</span>
           </h3>
-          <p className="text-xl font-light text-radiant-muted italic tracking-wide max-w-2xl mx-auto opacity-70">
-            Dal riallineamento quotidiano alla progettazione integrale della tua sovranità. Scegli il livello di upgrade richiesto dal tuo sistema.
+          <p className="text-xl font-light text-radiant-muted italic tracking-wide max-w-3xl mx-auto opacity-70">
+            L'accesso al Protocollo Luminel avviene esclusivamente su valutazione della struttura del candidato. Non si acquista. Ci si candida.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-stretch px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch px-4 max-w-5xl mx-auto">
           {tiers.map((tier, i) => (
             <motion.div 
               key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.2 }}
+              transition={{ delay: i * 0.25 }}
               viewport={{ once: true }}
-              className={`relative p-12 md:p-16 rounded-[50px] flex flex-col justify-between transition-all duration-1000 border border-radiant-champagne/10 shadow-pearl-skeuo h-full interactive
-                ${tier.theme === 'dark' ? 'bg-radiant-text text-white' : 'bg-white/80 backdrop-blur-xl text-radiant-text'}
-                ${tier.highlight ? 'lg:scale-105 z-20 shadow-trayce-glow' : 'z-10'}
+              className={`relative p-12 md:p-16 rounded-[50px] flex flex-col justify-between transition-all duration-1000 border h-full interactive
+                ${tier.theme === 'dark' 
+                  ? 'bg-radiant-text text-white border-radiant-gold/20 shadow-[0_30px_80px_rgba(0,0,0,0.2)]' 
+                  : 'bg-white/80 backdrop-blur-xl text-radiant-text border-radiant-champagne/10 shadow-pearl-skeuo'}
+                ${tier.highlight ? 'lg:scale-102 z-20' : 'z-10'}
               `}
             >
               <div className="space-y-12">
                 <div className="flex justify-between items-start">
-                  <div className={`p-5 rounded-[25px] ${tier.theme === 'dark' ? 'bg-radiant-gold text-radiant-text' : 'bg-radiant-bg text-radiant-gold border border-radiant-champagne/10'}`}>
+                  <div className={`p-5 rounded-[25px] ${tier.theme === 'dark' ? 'bg-radiant-gold/10 text-radiant-gold border border-radiant-gold/20' : 'bg-radiant-bg text-radiant-gold border border-radiant-champagne/10'}`}>
                     {tier.icon}
                   </div>
-                  <span className={`text-[10px] font-mono tracking-widest uppercase font-bold italic ${tier.theme === 'dark' ? 'text-white/20' : 'text-radiant-gold/30'}`}>
-                    Protocol 0{i+1}
+                  <span className={`text-[10px] font-mono tracking-widest uppercase font-bold italic ${tier.theme === 'dark' ? 'text-radiant-gold/40' : 'text-radiant-gold/30'}`}>
+                    Accesso Riservato
                   </span>
                 </div>
 
-                <div className="space-y-4">
-                  <h4 className={`text-4xl font-serif italic tracking-tight ${tier.theme === 'dark' ? 'text-white' : 'text-radiant-text'}`}>
+                <div className="space-y-2">
+                  <p className={`text-[10px] font-mono tracking-[0.5em] uppercase font-bold ${tier.theme === 'dark' ? 'text-radiant-gold' : 'text-radiant-gold'}`}>
                     {tier.name}
+                  </p>
+                  <h4 className={`text-3xl font-serif italic tracking-tight ${tier.theme === 'dark' ? 'text-white' : 'text-radiant-text'}`}>
+                    {tier.subtitle}
                   </h4>
-                  <p className={`text-lg font-light font-sans italic tracking-wide opacity-60 ${tier.theme === 'dark' ? 'text-white' : 'text-radiant-muted'}`}>
+                  <p className={`text-base font-light font-sans italic tracking-wide opacity-60 pt-4 ${tier.theme === 'dark' ? 'text-white' : 'text-radiant-muted'}`}>
                     {tier.desc}
                   </p>
                 </div>
 
-                <div className={`text-6xl font-serif tracking-tighter italic leading-none pt-4 ${tier.theme === 'dark' ? 'gold-gradient-text' : 'text-radiant-text'}`}>
-                  €{tier.price} <span className="text-[11px] font-mono font-bold tracking-[0.3em] uppercase opacity-40 block mt-2">{tier.period}</span>
+                <div className={`pt-4 ${tier.theme === 'dark' ? 'gold-gradient-text' : 'text-radiant-text'}`}>
+                  <div className="text-5xl font-serif tracking-tighter italic leading-none">
+                    {tier.price === 'Riservato' ? (
+                      <span className="text-radiant-gold italic">Su Candidatura</span>
+                    ) : (
+                      <>€{tier.price}</>  
+                    )}
+                  </div>
+                  <span className="text-[10px] font-mono font-bold tracking-[0.3em] uppercase opacity-40 block mt-2">{tier.period}</span>
                 </div>
 
-                <ul className="space-y-6 pt-12 border-t border-radiant-champagne/5">
+                <ul className="space-y-6 pt-12 border-t border-radiant-champagne/10">
                   {tier.features.map((f, idx) => (
                     <li key={idx} className="flex items-center gap-6 text-sm font-light italic tracking-wide">
                       <Check size={14} className="text-radiant-gold flex-shrink-0" /> {f}
@@ -109,7 +124,9 @@ const Pricing: React.FC<PricingProps> = ({ onSelect }) => {
               <button 
                 onClick={onSelect}
                 className={`mt-16 w-full py-8 rounded-full text-[10px] tracking-[0.5em] uppercase font-bold transition-all duration-700
-                  ${tier.theme === 'dark' ? 'bg-white text-radiant-text hover:bg-radiant-gold' : 'bg-radiant-text text-white hover:bg-radiant-gold'}
+                  ${tier.theme === 'dark' 
+                    ? 'bg-radiant-gold text-radiant-text hover:bg-white' 
+                    : 'bg-radiant-text text-white hover:bg-radiant-gold'}
                 `}
               >
                 {tier.cta}

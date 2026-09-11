@@ -146,7 +146,7 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
             <div className="inline-flex items-center gap-4 px-6 py-2 border border-radiant-champagne/20 rounded-full bg-white/5 backdrop-blur-3xl shadow-[0_0_30px_rgba(212,175,55,0.1)]">
               <Logo className="w-5 h-5" variant="gold" />
               <span className="text-[10px] font-mono tracking-[0.4em] text-white/70 uppercase font-bold italic">
-                L'Upgrade Invisibile • Luminel Way
+                Architettura di Alto Profilo • MICHAEL LUMINEL'S
               </span>
             </div>
           </motion.div>
@@ -157,8 +157,8 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
               non fa <span className="italic font-light text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#FFF1C5] to-[#C5A059] drop-shadow-[0_0_20px_rgba(212,175,55,0.5)]">rumore.</span>
             </h1>
             <p className="max-w-4xl mx-auto text-xl md:text-2xl font-light text-white/50 leading-relaxed tracking-wide font-sans italic opacity-90">
-              Sincronizza la tua quotidianità con la versione più chiara di te stesso. <br className="hidden md:block" />
-              Un'architettura fluida per chi ha smesso di reagire e ha iniziato a esistere.
+              Gestiamo la tua struttura con lo stesso rigore di un'indagine forense. <br className="hidden md:block" />
+              Per chi ha smesso di reagire ed è pronto a esercitare un dominio sistemico assoluto.
             </p>
           </motion.div>
 
@@ -169,7 +169,7 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
                 className="interactive group relative px-16 py-10 bg-[#151515] text-white rounded-full transition-all duration-700 shadow-[0_20px_40px_rgba(0,0,0,0.5)] hover:shadow-[0_30px_60px_rgba(212,175,55,0.2)] border border-white/5 hover:border-radiant-gold/50 flex items-center gap-6 overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-radiant-gold/20 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_2s_infinite]" />
-                <span className="text-[11px] tracking-[0.5em] uppercase font-bold relative z-10 text-white group-hover:text-radiant-champagne transition-colors">Inizia Audit</span>
+                <span className="text-[11px] tracking-[0.5em] uppercase font-bold relative z-10 text-white group-hover:text-radiant-champagne transition-colors">Richiedi l'Audit d'Élite</span>
                 <ArrowRight size={16} className="group-hover:translate-x-2 text-white/70 group-hover:text-radiant-champagne transition-all duration-500 relative z-10" />
               </button>
             </Magnetic>

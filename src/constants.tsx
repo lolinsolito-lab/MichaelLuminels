@@ -5,36 +5,36 @@ export const ECOSYSTEM: EcosystemItem[] = [
     id: 'virtual-twin',
     name: 'VirtualTwin',
     status: 'LIVE',
-    description: "La tua coscienza digitale. Non un chatbot, ma un'estensione della tua autorità capace di gestire relazioni e business mentre tu conquisti nuovi orizzonti.",
-    icon: '✧'
+    description: "La tua coscienza digitale. Un'estensione autonoma della tua autorità, strutturata per filtrare il caos operativo e gestire le dinamiche negoziali in totale isolamento dal rumore.",
+    icon: '\u2727'
   },
   {
-    id: 'insolita-academy',
-    name: 'Insolita Academy',
+    id: 'sovereign-board',
+    name: 'The Sovereign Board',
     status: 'ACTIVE',
-    description: 'Il Master Privato per la nuova nobiltà digitale. Insegniamo a governare le macchine, per non essere governati da esse.',
-    icon: '🏛️'
+    description: "L'organizzazione ristretta. Non si insegna. Si instaura un governo sulle macchine. Riservato alla nuova élite computazionale che rifiuta di essere governata dai sistemi.",
+    icon: '\uD83C\uDFDB\uFE0F'
   },
   {
     id: 'virtual-bnb',
     name: 'VirtualBNB',
     status: 'ACTIVE',
-    description: 'L’Automazione del Mattone. Trasformiamo asset fisici in rendite passive silenziose, gestite dall’intelligenza suprema.',
-    icon: '🏰'
+    description: 'Automazione del Mattone. Trasformiamo asset fisici in rendite passive silenziose, gestite da un\'intelligenza logistica spietata e senza attrito operativo.',
+    icon: '\uD83C\uDFF0'
   },
   {
     id: 'lumina-manager',
     name: 'Lumina Manager',
     status: 'IN DEV',
-    description: "Il Direttore Operativo Invisibile. Un sistema che anticipa le crisi, ottimizza i profitti e libera il tuo tempo per la pura visione.",
-    icon: '⚙️'
+    description: "Il Direttore Operativo Invisibile. Un sistema di controllo che anticipa le crisi sistemiche, protegge il capitale attentivo e libera la visione esecutiva.",
+    icon: '\u2699\uFE0F'
   },
   {
-    id: 'luminel-coach',
-    name: 'LuminelCoach',
+    id: 'biological-optimization-engine',
+    name: 'Biological Optimization Engine',
     status: 'SOON',
-    description: 'Alchimia Umana. La fusione tra il potenziale biologico e l’efficienza computazionale. Per leader che non accettano limiti.',
-    icon: '⚖️'
+    description: 'Alchimia Umana Avanzata. La calibrazione chirurgica tra potenziale biologico ed efficienza computazionale. Per chi non accetta limiti auto-imposti.',
+    icon: '\u26D1\uFE0F'
   }
 ];
 
