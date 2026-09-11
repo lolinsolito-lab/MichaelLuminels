@@ -35,12 +35,12 @@ const TerminalOverlay = () => {
   }, [current]);
 
   return (
-    <div className="absolute top-8 left-8 z-20 font-mono text-[9px] tracking-[0.18em] leading-loose text-radiant-gold/30 pointer-events-none select-none hidden md:block">
+    <div className="absolute top-28 left-8 z-20 font-mono text-[9px] tracking-[0.18em] leading-loose text-radiant-gold/60 pointer-events-none select-none hidden md:block">
       {lines.map((line, i) => (
         <motion.div
           key={i}
           initial={{ opacity: 0, x: -10 }}
-          animate={{ opacity: (i + 1) / lines.length * 0.6, x: 0 }}
+          animate={{ opacity: (i + 1) / lines.length * 0.9, x: 0 }}
           transition={{ duration: 0.5 }}
         >
           <span className="text-radiant-gold/20 mr-2">&gt;</span>{line}
