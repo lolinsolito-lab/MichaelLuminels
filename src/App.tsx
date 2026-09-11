@@ -17,6 +17,8 @@ import MembershipGate from '@/sections/MembershipGate';
 import PulseLounge from '@/sections/PulseLounge';
 import TheVault from '@/sections/TheVault';
 import Manifesto from '@/sections/Manifesto';
+import Ecosystem from '@/sections/Ecosystem';
+import Studio from '@/sections/Studio';
 
 // Sezioni d'Élite
 import Contrast from '@/sections/Contrast';
@@ -101,6 +103,9 @@ const App: React.FC = () => {
           <AboutMe />
 
           <Manifesto />
+          
+          <Ecosystem />
+          <Studio />
           
           <Quote />
           
