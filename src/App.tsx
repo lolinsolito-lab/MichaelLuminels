@@ -1,35 +1,35 @@
 
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import ProgressBar from './components/ProgressBar';
-import Hero from './sections/Hero';
-import Philosophy from './sections/Philosophy';
-import AI from './sections/AI';
-import AboutMe from './sections/AboutMe';
-import Laws from './sections/Laws';
-import Quote from './sections/Quote';
-import Quiz from './components/Quiz';
-import Journey from './sections/Journey';
-import Pricing from './sections/Pricing';
-import Footer from './sections/Footer';
-import LuminelAssistant from './components/LuminelAssistant';
-import MembershipGate from './sections/MembershipGate';
-import PulseLounge from './sections/PulseLounge';
-import TheVault from './sections/TheVault';
-import Manifesto from './sections/Manifesto';
+import Navbar from '@/components/Navbar';
+import ProgressBar from '@/components/ProgressBar';
+import Hero from '@/sections/Hero';
+import Philosophy from '@/sections/Philosophy';
+import AI from '@/sections/AI';
+import AboutMe from '@/sections/AboutMe';
+import Laws from '@/sections/Laws';
+import Quote from '@/sections/Quote';
+import Quiz from '@/components/Quiz';
+import Journey from '@/sections/Journey';
+import Pricing from '@/sections/Pricing';
+import Footer from '@/sections/Footer';
+import LuminelAssistant from '@/components/LuminelAssistant';
+import MembershipGate from '@/sections/MembershipGate';
+import PulseLounge from '@/sections/PulseLounge';
+import TheVault from '@/sections/TheVault';
+import Manifesto from '@/sections/Manifesto';
 
 // Sezioni d'Élite
-import Contrast from './sections/Contrast';
-import HiddenTax from './sections/HiddenTax';
-import AuditResult from './sections/AuditResult';
-import SovereignCheckout from './sections/SovereignCheckout';
-import ArchitectOnboarding from './sections/ArchitectOnboarding';
-import SovereignSignup from './sections/SovereignSignup';
-import SovereignLogin from './sections/SovereignLogin';
-import SovereignDashboard from './sections/SovereignDashboard';
+import Contrast from '@/sections/Contrast';
+import HiddenTax from '@/sections/HiddenTax';
+import AuditResult from '@/sections/AuditResult';
+import SovereignCheckout from '@/sections/SovereignCheckout';
+import ArchitectOnboarding from '@/sections/ArchitectOnboarding';
+import SovereignSignup from '@/sections/SovereignSignup';
+import SovereignLogin from '@/sections/SovereignLogin';
+import SovereignDashboard from '@/sections/SovereignDashboard';
 
 // Backend Interface
-import { supabase, type Profile } from './lib/supabase';
+import { supabase, type Profile } from '@/lib/supabase';
 
 type ViewState = 'landing' | 'quiz' | 'audit' | 'checkout' | 'onboarding' | 'signup' | 'login' | 'dashboard' | 'gate' | 'pulse' | 'vault';
 

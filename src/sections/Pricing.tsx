@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Check, Zap, Sparkles, Crown, Lock, ShieldCheck } from 'lucide-react';
-import Logo from '../components/Logo';
+import Logo from '@/components/Logo';
 
 interface PricingProps {
   onSelect: () => void;

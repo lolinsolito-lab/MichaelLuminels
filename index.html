@@ -113,21 +113,7 @@
         100% { background-position: -200% 0%; }
       }
     </style>
-    <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@19.0.0",
-    "react-dom": "https://esm.sh/react-dom@19.0.0",
-    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
-    "lucide-react": "https://esm.sh/lucide-react@0.460.0?external=react",
-    "framer-motion": "https://esm.sh/framer-motion@11.11.11?external=react,react-dom",
-    "@google/genai": "https://esm.sh/@google/genai@0.21.0",
-    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.45.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/"
-  }
-}
-</script>
+
   </head>
   <body class="antialiased selection:bg-radiant-champagne/10 selection:text-radiant-text">
     <div id="custom-cursor"></div>
@@ -160,5 +146,6 @@
         else document.body.classList.remove('cursor-active');
       });
     </script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

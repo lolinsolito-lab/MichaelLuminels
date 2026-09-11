@@ -29,7 +29,7 @@ const Quote: React.FC = () => {
             className="text-[11px] font-mono tracking-[0.8em] uppercase text-radiant-gold font-bold"
           >
             Michael Jara
-          </motion.h2>
+          </motion.div>
           <div className="text-xl font-light text-radiant-muted uppercase tracking-[0.3em] italic">Founding Architect, Luminel Way</div>
         </div>
 

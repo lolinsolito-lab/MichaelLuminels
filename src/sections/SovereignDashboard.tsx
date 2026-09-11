@@ -15,7 +15,7 @@ import {
   ArrowRight,
   ChevronRight
 } from 'lucide-react';
-import { type Profile, supabase } from '../lib/supabase';
+import { type Profile, supabase } from '@/lib/supabase';
 
 interface DashboardProps {
   user: Profile | null;
