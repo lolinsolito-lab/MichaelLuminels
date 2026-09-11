@@ -58,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({ onAccessClick }) => {
           </div>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden lg:flex items-center gap-6 xl:gap-10">
             {navLinks.map((link) => (
               <button 
                 key={link.name} 
@@ -71,7 +71,7 @@ const Navbar: React.FC<NavbarProps> = ({ onAccessClick }) => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-8">
             <button 
               onClick={onAccessClick}
               className={`text-[9px] font-mono uppercase tracking-[0.3em] transition-colors flex items-center gap-2 font-bold italic ${scrolled ? 'text-radiant-gold hover:text-white' : 'text-radiant-gold hover:text-white'}`}
