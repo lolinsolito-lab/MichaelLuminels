@@ -7,23 +7,23 @@ const Journey: React.FC = () => {
   const steps = [
     {
       version: "I",
-      title: "Risveglio",
-      tag: "THE DAWN",
-      description: "Dissipazione del rumore tossico. Riacquisizione della chiarezza biologica.",
+      title: "La Soglia",
+      tag: "THE CALL",
+      description: "Riconoscere l'inganno del rumore. Superare i vecchi schemi e purificare la mente da tutto ciò che non ti appartiene più.",
       icon: <Sun className="w-6 h-6" />,
     },
     {
       version: "II",
-      title: "Sincronia",
-      tag: "THE ALIGNMENT",
-      description: "Progettazione dei flussi d'oro. Automazione della sovranità quotidiana.",
+      title: "La Trasformazione",
+      tag: "THE ALCHEMY",
+      description: "Disegnare la tua nuova mappa esistenziale. Integrare i flussi d'oro nella quotidianità e incarnare una versione superiore di te stesso.",
       icon: <Shield className="w-6 h-6" />,
     },
     {
       version: "III",
-      title: "Splendore",
+      title: "Il Ritorno con l'Elisir",
       tag: "THE RADIANCE",
-      description: "Manifestazione della visione suprema. Comando assoluto del proprio tempo.",
+      description: "Manifestare la tua versione più limpida. Operare nel mondo con totale leggerezza, grazia e maestria sovrana.",
       icon: <Sparkles className="w-6 h-6" />,
     }
   ];
@@ -34,10 +34,10 @@ const Journey: React.FC = () => {
         <div className="space-y-40">
           
           <div className="max-w-4xl space-y-10">
-            <span className="text-[11px] font-mono tracking-[0.6em] text-radiant-gold uppercase font-bold italic">21 Days To Sovereignty</span>
+            <span className="text-[11px] font-mono tracking-[0.6em] text-radiant-gold uppercase font-bold italic">Il Viaggio dell'Eroe</span>
             <h3 className="text-7xl md:text-9xl font-serif text-radiant-text leading-[0.85] tracking-tighter">
-              Il Cammino <br /> 
-              <span className="gold-gradient-text italic font-light text-radiant-gold/80">Illuminato.</span>
+              Dalla Nebbia alla <br /> 
+              <span className="gold-gradient-text italic font-light">Realizzazione Radiosa.</span>
             </h3>
           </div>
 

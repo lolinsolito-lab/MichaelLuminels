@@ -43,28 +43,28 @@ const AboutMe: React.FC = () => {
             className="lg:col-span-7 space-y-16"
           >
             <div className="space-y-6">
-              <span className="text-[11px] font-mono tracking-[0.6em] text-radiant-gold uppercase font-bold italic">The Architect’s Dossier</span>
+              <span className="text-[11px] font-mono tracking-[0.6em] text-radiant-gold uppercase font-bold italic">The Architect's Dossier</span>
               <h2 className="text-6xl md:text-8xl font-serif leading-[0.85] tracking-tighter italic">
-                Dalla Procura al <br />
-                <span className="gold-gradient-text font-light">Reset Sovrano.</span>
+                Michael Luminel <br />
+                <span className="gold-gradient-text font-light">L'Architetto dello Spirito.</span>
               </h2>
             </div>
 
             <div className="space-y-10 text-xl md:text-2xl font-light text-white/40 leading-relaxed tracking-wide italic font-sans text-justify">
               <p>
-                La mia mente è stata forgiata in ecosistemi in cui il caos non è un'opzione, ma un rischio fatale. Tra i corridoi della <span className="text-white font-medium italic underline decoration-radiant-gold/20">Procura della Repubblica</span>, ho operato a fianco di magistrati e organi inquirenti, dove ogni dato è un'arma e la sicurezza dei flussi informativi decreta la vita o la morte di un'operazione.
+                Ho trascorso anni a studiare la complessità dei flussi e delle strutture organizzative all'interno di colossi globali come <span className="text-white font-medium italic underline decoration-radiant-gold/20">Capgemini</span>. Lì ho compreso una legge universale: le strutture rigide opprimono l'essere umano; solo i flussi fluidi lo elevano.
               </p>
               
               <p>
-                In <span className="text-white font-medium">Capgemini</span>, ho proiettato questa disciplina sull'architettura dei flussi aziendali globali. L'essere umano fallisce dove la macchina eccelle. Non hai bisogno di più tempo. Hai bisogno di un'infrastruttura inattaccabile.
+                Ho visto leader straordinari pagare un prezzo altissimo in termini di stress e felicità personale. La soluzione non è fare di più, ma <span className="text-white font-medium">creare un'architettura di vita superiore</span>.
               </p>
 
               <blockquote className="border-l-4 border-radiant-gold pl-12 py-6 italic text-3xl md:text-4xl text-white font-serif leading-tight tracking-tight">
-                "Applichiamo alla tua struttura privata e finanziaria lo stesso livello di rigore e isolamento di un'indagine forense."
+                "Tratto la tua evoluzione con la stessa cura e precisione con cui un maestro scultore modella il marmo."
               </blockquote>
 
               <p>
-                Oggi, ho distillato quel rigore istituzionale nel <span className="text-radiant-gold font-medium italic">Protocollo Luminel</span>. Non offro motivazione. Non vendo corsi. Offro il reset del tuo sistema operativo: un'ingegnerizzazione completa della tua infrastruttura di vita e di business.
+                Oggi ho distillato questa esperienza nel mio <span className="text-radiant-gold font-medium italic">Protocollo Trasformazionale</span>. Il mio ruolo non è motivarti, ma essere la guida che ti fornisce la mappa per riprogettare la tua quotidianità dal profondo.
               </p>
             </div>
 

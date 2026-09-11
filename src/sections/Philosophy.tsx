@@ -18,21 +18,21 @@ const Philosophy: React.FC = () => {
           >
             <div className="flex items-center gap-6">
               <Layout className="w-6 h-6 text-radiant-gold" />
-              <span className="text-radiant-gold font-mono text-[11px] tracking-[0.5em] uppercase font-bold italic">Architettura di Valore</span>
+              <span className="text-radiant-gold font-mono text-[11px] tracking-[0.5em] uppercase font-bold italic">Il Primo Passo del Viaggio</span>
             </div>
             <h2 className="text-6xl md:text-8xl font-serif leading-[0.85] text-radiant-text tracking-tighter">
               Il Rumore è <br /> 
-              <span className="gold-gradient-text italic font-light">inefficienza sistemica.</span>
+              <span className="gold-gradient-text italic font-light">l'illusione del movimento.</span>
             </h2>
             <div className="space-y-10 text-2xl font-light text-radiant-muted leading-relaxed tracking-wide italic font-sans text-justify">
               <p>
-                Luminel Way nasce dalla consapevolezza che il successo non dipende dal tempo, ma dalla qualità dell'architettura in cui quel tempo risiede.
+                Vivi in un mondo progettato per distrarti. Ogni notifica, ogni urgenza improvvisa è un frammento della tua energia vitale che viene disperso. Ti hanno insegnato che correre significa evolversi, ma la verità è che ti stai allontanando dal tuo centro.
               </p>
               <p>
-                Ogni interferenza è una perdita di sovranità. Il nostro compito è sincronizzare la tua intenzione con un sistema che la amplifica senza attriti.
+                Il Protocollo Luminel nasce per chi sente una chiamata profonda: il bisogno di fermarsi, fare silenzio e riorganizzare lo spazio in cui risiede la propria esistenza.
               </p>
               <p className="border-l-2 border-radiant-gold/30 pl-12 italic text-radiant-text font-medium text-3xl leading-snug">
-                "Non aggiungiamo compiti; eliminiamo l'obsolescenza dei flussi che non ti appartengono."
+                "Non aggiungiamo pesi al tuo cammino; ti insegniamo a lasciare andare ciò che non ti appartiene più."
               </p>
             </div>
           </motion.div>
@@ -44,16 +44,16 @@ const Philosophy: React.FC = () => {
             className="relative"
           >
             <div className="bg-white/80 backdrop-blur-3xl p-24 rounded-[60px] space-y-12 border border-radiant-champagne/10 shadow-pearl-skeuo">
-              <h3 className="text-4xl font-serif gold-gradient-text italic leading-tight tracking-tight">"Sincronizza il tuo Comando."</h3>
+              <h3 className="text-4xl font-serif gold-gradient-text italic leading-tight tracking-tight">"Riconquista la tua Centralità."</h3>
               <p className="text-xl text-radiant-muted font-light leading-relaxed italic tracking-wide">
-                Il protocollo Luminel è un <span className="text-radiant-text font-medium underline decoration-radiant-gold/30">upgrade dell'identità operativa</span>. 
-                Utilizziamo l'analisi dei dati per permettere alla tua architettura personale di risplendere con trasparenza assoluta.
+                La trasformazione non è uno sforzo, è un <span className="text-radiant-text font-medium underline decoration-radiant-gold/30">ritorno all'ordine naturale</span>. 
+                Uniamo la psicologia del focus moderno a un percorso di profonda consapevolezza interiore.
               </p>
               <div className="pt-16 border-t border-radiant-champagne/10">
-                 <div className="text-[11px] font-mono tracking-[0.4em] uppercase text-radiant-gold mb-6 font-bold italic">Sovereign Rule: Structural Flow</div>
+                 <div className="text-[11px] font-mono tracking-[0.4em] uppercase text-radiant-gold mb-6 font-bold italic">Mentore & Lifestyle Architect</div>
                  <div className="flex items-center gap-6">
                     <div className="h-px w-24 bg-radiant-champagne"></div>
-                    <span className="text-xl font-serif italic text-radiant-text font-light">Michael Jara, Architetto Fondatore</span>
+                    <span className="text-xl font-serif italic text-radiant-text font-light">Michael Luminel</span>
                  </div>
               </div>
             </div>

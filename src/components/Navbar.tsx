@@ -20,11 +20,11 @@ const Navbar: React.FC<NavbarProps> = ({ onAccessClick }) => {
   }, []);
 
   const navLinks = [
-    { name: "Il Paradigma", id: "philosophy" },
-    { name: "Il Protocollo", id: "laws" },
-    { name: "L'Esecuzione", id: "journey" },
+    { name: "Il Manifesto", id: "philosophy" },
+    { name: "La Chiamata", id: "laws" },
+    { name: "L'Ecosistema", id: "ecosystem" },
     { name: "L'Architetto", id: "authority" },
-    { name: "Accesso al Board", id: "pricing" },
+    { name: "Inizia il Viaggio", id: "pricing" },
   ];
 
   const scrollToSection = (id: string) => {
@@ -84,7 +84,7 @@ const Navbar: React.FC<NavbarProps> = ({ onAccessClick }) => {
                 className="interactive px-10 py-4 bg-white/10 text-white text-[9px] font-mono uppercase tracking-[0.4em] rounded-full transition-all duration-500 hover:bg-white hover:text-black border border-white/20 font-bold flex items-center gap-3 overflow-hidden group"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_2s_infinite]" />
-                <span className="relative z-10">Richiedi Audit</span>
+                <span className="relative z-10">Rispondi alla Chiamata</span>
               </button>
             </Magnetic>
           </div>

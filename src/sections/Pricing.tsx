@@ -12,36 +12,35 @@ const Pricing: React.FC<PricingProps> = ({ onSelect }) => {
   const tiers = [
     {
       name: "Protocol 01",
-      subtitle: "Sovereign Sync",
-      price: "2.500",
-      period: "su selezione",
-      desc: "Upgrade sistemico assistito. Integrazione dell'intelligenza architettonica nei tuoi flussi critici. Automazione delegata e ripristino della sovranità sul tempo.",
+      subtitle: "La Scintilla Iniziale",
+      price: "99",
+      period: "Accesso Immediato",
+      desc: "Il percorso digitale per gettare le fondamenta. Ideale per chi si accosta al metodo per la prima volta e desidera muovere i primi passi verso la propria sovranità interiore.",
       features: [
-        "Audit Patrimoniale d'Élite (72h)",
-        "Ingegnerizzazione dei Flussi Critici",
-        "Dashboard Sovereign Sync",
-        "Filtro e Automazione del Rumore Operativo",
-        "Reporting Mensile Forense"
+        "6 Moduli Video Ispirazionali",
+        "Il Diario del Focus Personale",
+        "Accesso alla Community dei Viaggiatori",
+        "Contenuti di Espansione Periodici"
       ],
-      cta: "Candidati per il Protocol 01",
+      cta: "Rispondi alla Chiamata e Inizia",
       icon: <ShieldCheck size={24} />,
       highlight: false,
       theme: "light"
     },
     {
       name: "Protocol 02",
-      subtitle: "The Architect Private Office",
-      price: "Riservato",
-      period: "su candidatura diretta",
-      desc: "Ingegnerizzazione totale e diretta con Michael Luminel. Per famiglie imprenditoriali e founder di alto profilo che richiedono infrastrutture IA proprietarie e schermatura totale del capitale attentivo.",
+      subtitle: "Sovereign Sync",
+      price: "2.500",
+      period: "Su Prenotazione",
+      desc: "L'esperienza trasformativa totale. Un affiancamento intimo e personalizzato con Michael per ridefinire l'intera mappa della tua vita e del tuo business, eliminando ogni blocco emotivo e strutturale.",
       features: [
-        "Accesso Diretto a Michael Luminel",
-        "Sviluppo Infrastruttura IA Proprietaria",
-        "Schermatura Totale del Capitale Attentivo",
-        "Ottimizzazione Biologico-Sistemica",
-        "Protezione Anti-Infiltrazione Digitale"
+        "Sessioni di Mentoring Diretto con Michael",
+        "Analisi Profonda dello Stile di Vita",
+        "Mappatura Custom dei Flussi d'Oro",
+        "Contatto Prioritario Personale",
+        "Accesso Esclusivo alla Sovereign Board"
       ],
-      cta: "Richiedi Accesso al Private Office",
+      cta: "Richiedi la tua Sessione di Allineamento",
       icon: <Crown size={24} />,
       highlight: true,
       theme: "dark"
@@ -54,13 +53,13 @@ const Pricing: React.FC<PricingProps> = ({ onSelect }) => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-48 space-y-8">
-          <span className="text-[11px] font-mono tracking-[0.5em] text-radiant-gold uppercase font-bold italic">Selezione & Accesso</span>
+          <span className="text-[11px] font-mono tracking-[0.5em] text-radiant-gold uppercase font-bold italic">L'Inizio del Nuovo Capitolo</span>
           <h3 className="text-7xl md:text-[9rem] font-serif text-radiant-text leading-[0.8] tracking-tighter">
-            Il Board non è <br /> 
-            <span className="gold-gradient-text italic font-light">aperto al mercato.</span>
+            Scegli la tua <br /> 
+            <span className="gold-gradient-text italic font-light">porta d'ingresso.</span>
           </h3>
           <p className="text-xl font-light text-radiant-muted italic tracking-wide max-w-3xl mx-auto opacity-70">
-            L'accesso al Protocollo Luminel avviene esclusivamente su valutazione della struttura del candidato. Non si acquista. Ci si candida.
+            Ogni grande viaggio inizia con una singola decisione. Scegli il livello più adatto alla tua chiamata attuale.
           </p>
         </div>
 

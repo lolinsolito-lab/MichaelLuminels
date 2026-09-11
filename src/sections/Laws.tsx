@@ -15,51 +15,51 @@ const Laws: React.FC = () => {
   const laws = [
     {
       id: "01",
-      title: "Risonanza Identitaria",
+      title: "Allineamento d'Intenti",
       tag: "Vision",
-      description: "Il caos nasce dalla disconnessione tra anima e azione. Riallineiamo la tua luce interna dissipando le distorsioni digitali.",
+      description: "Sincronizziamo i tuoi gesti quotidiani con i desideri della tua parte più autentica. L’azione nasce dall’essere, non dall’urgenza.",
       icon: <Fingerprint className="w-8 h-8" />
     },
     {
       id: "02",
-      title: "Chiarificazione Chirurgica",
+      title: "Distacco Consapevole",
       tag: "Focus",
-      description: "Applichiamo il rigore delle procedure forensi per isolare l'essenziale. Se non brilla della tua visione, viene rimosso.",
+      description: "Isoliamo ciò che nutre la tua visione. Tutto il resto viene lasciato andare con grazia e senza sforzo, come foglie nel vento.",
       icon: <Sun className="w-8 h-8" />
     },
     {
       id: "03",
-      title: "Automazione Solare",
+      title: "Grazia Operativa",
       tag: "Flow",
-      description: "Il lusso supremo è l'assenza di attrito. Progettiamo flussi invisibili che operano come architetture celesti.",
+      description: "Disegniamo abitudini che scorrono come acqua, eliminando ogni forma di sforzo inutile. Il lusso è l’assenza totale di attrito.",
       icon: <Zap className="w-8 h-8" />
     },
     {
       id: "04",
-      title: "Inviolabilità Istituzionale",
+      title: "Santuario Mentale",
       tag: "Security",
-      description: "Proteggere il tuo pensiero è un atto sacro. Creiamo un prisma difensivo tra la tua mente e l'ombra esterna.",
+      description: "Edifichiamo uno scudo protettivo attorno alla tua attenzione, al riparo dalle interferenze esterne e dal rumore digitale.",
       icon: <ShieldCheck className="w-8 h-8" />
     },
     {
       id: "05",
-      title: "Spazio di Cristallo",
+      title: "Spazio Sacro",
       tag: "Assets",
-      description: "Solo nel silenzio radioso si manifesta il potere. Progettiamo spazi di assenza per far fiorire la tua sovranità.",
+      description: "Creiamo oasi di vuoto fertile per rigenerare la tua intuizione e la tua creatività. Solo nel silenzio radioso fiorisce il genio.",
       icon: <Layers className="w-8 h-8" />
     },
     {
       id: "06",
-      title: "Estetica dell'Ordine",
+      title: "Estetica dell'Anima",
       tag: "Identity",
-      description: "L'ordine estetico è un requisito funzionale. Se il tuo ecosistema riflette luce, la tua mente opererà con splendore.",
+      description: "L’ordine esterno diventa lo specchio di una mente calma. Ciò che ci circonda riflette esattamente chi siamo diventati.",
       icon: <Award className="w-8 h-8" />
     },
     {
       id: "07",
-      title: "Sovranità Radiosa",
+      title: "Il Ritorno al Trono",
       tag: "Ownership",
-      description: "L'apice del protocollo. Diventare l'unico Architetto di Luce che governa ogni variabile del proprio destino.",
+      description: "Diventare l’unico, legittimo e consapevole autore del proprio destino. L’apice del cammino: la sovranità totale su se stessi.",
       icon: <Crown className="w-8 h-8" />
     }
   ];
@@ -76,7 +76,7 @@ const Laws: React.FC = () => {
             whileInView={{ opacity: 1 }}
             className="text-[11px] font-mono tracking-[0.7em] text-radiant-gold uppercase font-bold italic"
           >
-            The Illuminated Code
+            The Sovereign Code
           </motion.h2>
           <motion.h3 
             initial={{ opacity: 0, y: 30 }}
@@ -84,8 +84,8 @@ const Laws: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-7xl md:text-[9rem] font-serif text-radiant-text leading-[0.8] tracking-tighter"
           >
-            Le 7 Leggi del <br /> 
-            <span className="gold-gradient-text italic font-light">Risveglio.</span>
+            Le 7 Leggi dell' <br /> 
+            <span className="gold-gradient-text italic font-light">Armonia Interiore.</span>
           </motion.h3>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -93,7 +93,7 @@ const Laws: React.FC = () => {
             transition={{ delay: 0.4 }}
             className="text-2xl font-light text-radiant-muted max-w-2xl leading-relaxed tracking-wide italic mx-auto"
           >
-            Protocolli di un sistema operativo superiore, distillati dalla luce zen e dal rigore forense per chi esige il comando del proprio tempo.
+            I pilastri universali per vivere con assoluta centratura. Non regole da seguire, ma verità da incarnare nel profondo del proprio essere.
           </motion.p>
         </div>
 

@@ -9,13 +9,16 @@ const Footer: React.FC = () => {
         <div className="space-y-6 text-center md:text-left flex flex-col items-center md:items-start">
           <Logo className="w-12 h-12" withText variant="gold" />
           <p className="text-[10px] font-mono text-radiant-muted uppercase tracking-[0.6em] font-bold">
-            © 2024 • Michael Jara • High-Reliability Architect
+            © 2026 • Michael Luminel • Lifestyle Architect
+          </p>
+          <p className="text-[9px] font-mono text-radiant-muted/50 uppercase tracking-[0.4em]">
+            Personal Transformation Protocol
           </p>
         </div>
         <div className="flex gap-16 text-[10px] font-mono tracking-[0.5em] uppercase text-radiant-muted font-bold italic">
           <a href="#" className="hover:text-radiant-champagne transition-colors">Privacy</a>
-          <a href="#" className="hover:text-radiant-champagne transition-colors">Protocolli</a>
-          <a href="#" className="hover:text-radiant-champagne transition-colors">Istituzionale</a>
+          <a href="#" className="hover:text-radiant-champagne transition-colors">Termini dell'Evoluzione</a>
+          <a href="#" className="hover:text-radiant-champagne transition-colors">Il Manifesto</a>
         </div>
       </div>
     </footer>
