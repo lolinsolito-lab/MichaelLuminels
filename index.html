@@ -41,9 +41,24 @@
             boxShadow: {
               'trayce-glow': '0 0 60px rgba(224, 242, 254, 0.4)',
               'pearl-skeuo': 'inset 0 2px 4px rgba(255,255,255,1), 0 10px 40px rgba(0,0,0,0.02)',
+            },
+            keyframes: {
+              shimmer: {
+                '100%': { transform: 'translateX(100%)' }
+              }
             }
           }
-        }
+        },
+        plugins: [
+          function({ addUtilities }) {
+            const newUtilities = {
+              '.preserve-3d': { 'transform-style': 'preserve-3d' },
+              '.perspective': { 'perspective': '1000px' },
+              '.backface-hidden': { 'backface-visibility': 'hidden' },
+            }
+            addUtilities(newUtilities)
+          }
+        ]
       }
     </script>
     <style>

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, User } from 'lucide-react';
 import Logo from './Logo';
+import Magnetic from '@/components/Magnetic';
 
 interface NavbarProps {
   onAccessClick: () => void;
@@ -46,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ onAccessClick }) => {
   return (
     <nav className={`fixed top-0 left-0 w-full z-[150] transition-all duration-700 ${scrolled ? 'py-4' : 'py-8'}`}>
       <div className="max-w-7xl mx-auto px-6">
-        <div className={`relative flex items-center justify-between px-8 py-4 rounded-full transition-all duration-1000 ${scrolled ? 'bg-white/70 backdrop-blur-2xl border border-radiant-champagne/10 shadow-pearl-skeuo' : 'bg-transparent'}`}>
+        <div className={`relative flex items-center justify-between px-8 py-5 rounded-full transition-all duration-1000 ${scrolled ? 'bg-white/80 backdrop-blur-3xl border border-radiant-champagne/20 shadow-trayce-glow' : 'bg-transparent'}`}>
           
           {/* Logo Section */}
           <div 
@@ -70,19 +71,22 @@ const Navbar: React.FC<NavbarProps> = ({ onAccessClick }) => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-8">
             <button 
               onClick={onAccessClick}
               className="text-[9px] font-mono uppercase tracking-[0.3em] text-radiant-gold hover:text-radiant-text transition-colors flex items-center gap-2 font-bold italic"
             >
               <User size={12} /> Area Membri
             </button>
-            <button 
-              onClick={() => scrollToSection('audit-start')}
-              className="interactive px-8 py-3 bg-radiant-text text-white text-[9px] font-mono uppercase tracking-[0.4em] rounded-full hover:bg-radiant-gold transition-all font-bold shadow-lg"
-            >
-              Inizia Audit
-            </button>
+            <Magnetic>
+              <button 
+                onClick={() => scrollToSection('audit-start')}
+                className="interactive px-10 py-4 bg-radiant-text text-white text-[9px] font-mono uppercase tracking-[0.4em] rounded-full transition-all duration-500 shadow-[0_15px_30px_rgba(28,25,23,0.1)] hover:shadow-[0_20px_40px_rgba(28,25,23,0.25)] font-bold flex items-center gap-3 overflow-hidden group"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_2s_infinite]" />
+                <span className="relative z-10">Inizia Audit</span>
+              </button>
+            </Magnetic>
           </div>
 
           {/* Mobile Toggle */}

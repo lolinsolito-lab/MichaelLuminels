@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import Logo from '@/components/Logo';
+import Magnetic from '@/components/Magnetic';
 
 interface HeroProps {
   onStart: () => void;
@@ -45,17 +46,23 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 pt-10">
-            <button 
-              onClick={onStart}
-              className="interactive group relative px-14 py-8 bg-radiant-text text-white rounded-full transition-all duration-700 hover:scale-105 shadow-2xl flex items-center gap-4"
-            >
-              <span className="text-[10px] tracking-[0.4em] uppercase font-bold">Accedi al Flusso</span>
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="interactive px-14 py-8 text-radiant-muted text-[10px] tracking-[0.4em] uppercase border border-radiant-champagne/20 rounded-full hover:bg-white/50 transition-all font-bold backdrop-blur-xl">
-              The Architect's Journal
-            </button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-12 pt-16">
+            <Magnetic>
+              <button 
+                onClick={onStart}
+                className="interactive group relative px-16 py-10 bg-radiant-text text-white rounded-full transition-all duration-700 shadow-[0_20px_40px_rgba(28,25,23,0.15)] hover:shadow-[0_30px_60px_rgba(28,25,23,0.3)] flex items-center gap-6 overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_2s_infinite]" />
+                <span className="text-[11px] tracking-[0.5em] uppercase font-bold relative z-10">Inizia Audit</span>
+                <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform duration-500 relative z-10" />
+              </button>
+            </Magnetic>
+
+            <Magnetic>
+              <button className="interactive px-16 py-10 text-radiant-text text-[11px] tracking-[0.5em] uppercase border border-radiant-champagne/30 rounded-full hover:bg-white/60 transition-all font-bold backdrop-blur-3xl shadow-pearl-skeuo hover:shadow-trayce-glow">
+                The Architect's Journal
+              </button>
+            </Magnetic>
           </div>
         </motion.div>
       </div>
