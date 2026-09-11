@@ -61,8 +61,8 @@ const Logo: React.FC<LogoProps> = ({ className = "w-10 h-10", variant = 'gold', 
       
       {withText && (
         <div className="flex flex-col">
-          <span className={`text-2xl font-serif italic tracking-tighter leading-none ${variant === 'dark' ? 'text-radiant-text' : variant === 'white' ? 'text-white' : 'text-radiant-text'}`}>
-            Luminel <span className="font-light">Way.</span>
+          <span className={`text-2xl font-serif tracking-tighter leading-none uppercase ${variant === 'dark' ? 'text-radiant-text' : variant === 'white' ? 'text-white' : 'text-radiant-text'}`}>
+            Michael <span className="font-light">Luminel's</span>
           </span>
           <span className={`text-[7px] font-mono uppercase tracking-[0.6em] opacity-40 font-bold mt-1 ${variant === 'white' ? 'text-white/60' : 'text-radiant-gold'}`}>
             The Sovereign Protocol

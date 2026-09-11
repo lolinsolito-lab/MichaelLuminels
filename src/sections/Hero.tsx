@@ -234,7 +234,7 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
       </div>
 
       {/* MAIN CONTENT */}
-      <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
+      <div className="max-w-7xl mx-auto px-6 relative z-10 text-center pt-32 md:pt-40">
         <motion.div variants={container} initial="hidden" animate="visible" className="space-y-12">
 
           {/* BADGE */}
