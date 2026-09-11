@@ -78,7 +78,7 @@ const Contrast: React.FC = () => {
 
         <div className="flex justify-between items-center text-[11px] font-mono text-radiant-muted uppercase tracking-[0.5em] font-bold italic px-12">
            <span>Scorri per visualizzare l'Eclissi</span>
-           <span className="text-radiant-gold">Michael Jara: "La luce è una scelta architettonica."</span>
+           <span className="text-radiant-gold">Michael Luminel: "La luce è una scelta architettonica."</span>
         </div>
       </div>
     </section>

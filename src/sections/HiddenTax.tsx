@@ -92,7 +92,7 @@ const HiddenTax: React.FC = () => {
                 </div>
               </div>
               <p className="text-xl font-light text-white/40 italic leading-relaxed border-l border-radiant-gold/40 pl-10">
-                Michael Jara: "Luminel Way ferma questa emorragia. Non è un corso; è un atto di difesa della tua chiarezza patrimoniale."
+                Michael Luminel: "Il silenzio è la massima espressione di potere. Il Protocollo Luminel non è un corso; è la tua architettura di vita superiore."
               </p>
             </div>
           </motion.div>

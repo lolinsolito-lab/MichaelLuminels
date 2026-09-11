@@ -324,7 +324,7 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
 
           {/* BOTTOM TRUST STRIP */}
           <motion.div variants={item} className="flex items-center justify-center gap-8 pt-2">
-            {['Procura della Repubblica', 'Capgemini', 'Il Protocollo Luminel'].map((label, i) => (
+            {['Il Protocollo Luminel', 'The Sovereign Board', 'Lifestyle Architecture'].map((label, i) => (
               <div key={i} className="flex items-center gap-2">
                 <span className="w-1 h-1 rounded-full bg-radiant-gold/40" />
                 <span className="text-[8px] font-mono tracking-[0.4em] uppercase text-white/20">{label}</span>

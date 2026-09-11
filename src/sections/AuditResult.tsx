@@ -89,7 +89,7 @@ const AuditResult: React.FC<AuditResultProps> = ({ score, onProceed }) => {
             <div className="p-10 bg-radiant-bg/80 rounded-[45px] border border-radiant-champagne/20 flex items-center gap-10 shadow-inner">
                <ShieldAlert className="text-radiant-gold flex-shrink-0" size={40} />
                <p className="text-lg font-light text-radiant-muted leading-relaxed italic">
-                 Michael Jara: <span className="text-radiant-text font-bold italic">"Il tuo attuale blocco è strutturale. È tempo di dissipare l'ombra."</span>
+                 Michael Luminel: <span className="text-radiant-text font-bold italic">"Il tuo attuale blocco è strutturale. È tempo di dissipare l'ombra."</span>
                </p>
             </div>
 

@@ -55,7 +55,7 @@ const Pricing: React.FC<PricingProps> = ({ onSelect }) => {
         <div className="text-center max-w-4xl mx-auto mb-48 space-y-8">
           <span className="text-[11px] font-mono tracking-[0.5em] text-radiant-gold uppercase font-bold italic">L'Inizio del Nuovo Capitolo</span>
           <h3 className="text-7xl md:text-[9rem] font-serif text-radiant-text leading-[0.8] tracking-tighter">
-            Scegli la tua <br /> 
+            Scegli la tua <br />
             <span className="gold-gradient-text italic font-light">porta d'ingresso.</span>
           </h3>
           <p className="text-xl font-light text-radiant-muted italic tracking-wide max-w-3xl mx-auto opacity-70">
@@ -65,15 +65,15 @@ const Pricing: React.FC<PricingProps> = ({ onSelect }) => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch px-4 max-w-5xl mx-auto">
           {tiers.map((tier, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.25 }}
               viewport={{ once: true }}
               className={`relative p-12 md:p-16 rounded-[50px] flex flex-col justify-between transition-all duration-1000 border h-full interactive
-                ${tier.theme === 'dark' 
-                  ? 'bg-radiant-text text-white border-radiant-gold/20 shadow-[0_30px_80px_rgba(0,0,0,0.2)]' 
+                ${tier.theme === 'dark'
+                  ? 'bg-radiant-text text-white border-radiant-gold/20 shadow-[0_30px_80px_rgba(0,0,0,0.2)]'
                   : 'bg-white/80 backdrop-blur-xl text-radiant-text border-radiant-champagne/10 shadow-pearl-skeuo'}
                 ${tier.highlight ? 'lg:scale-102 z-20' : 'z-10'}
               `}
@@ -105,7 +105,7 @@ const Pricing: React.FC<PricingProps> = ({ onSelect }) => {
                     {tier.price === 'Riservato' ? (
                       <span className="text-radiant-gold italic">Su Candidatura</span>
                     ) : (
-                      <>€{tier.price}</>  
+                      <>€{tier.price}</>
                     )}
                   </div>
                   <span className="text-[10px] font-mono font-bold tracking-[0.3em] uppercase opacity-40 block mt-2">{tier.period}</span>
@@ -120,11 +120,11 @@ const Pricing: React.FC<PricingProps> = ({ onSelect }) => {
                 </ul>
               </div>
 
-              <button 
+              <button
                 onClick={onSelect}
                 className={`mt-16 w-full py-8 rounded-full text-[10px] tracking-[0.5em] uppercase font-bold transition-all duration-700
-                  ${tier.theme === 'dark' 
-                    ? 'bg-radiant-gold text-radiant-text hover:bg-white' 
+                  ${tier.theme === 'dark'
+                    ? 'bg-radiant-gold text-radiant-text hover:bg-white'
                     : 'bg-radiant-text text-white hover:bg-radiant-gold'}
                 `}
               >
@@ -135,7 +135,7 @@ const Pricing: React.FC<PricingProps> = ({ onSelect }) => {
         </div>
 
         {/* The Sovereign Seal Redesign */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -152,8 +152,8 @@ const Pricing: React.FC<PricingProps> = ({ onSelect }) => {
               </div>
             </div>
             <div className="flex-shrink-0 relative">
-               <div className="absolute inset-0 bg-radiant-gold/10 rounded-full blur-2xl group-hover:bg-radiant-gold/30 transition-all duration-1000"></div>
-               <Logo className="w-16 h-16 relative z-10" variant="gold" />
+              <div className="absolute inset-0 bg-radiant-gold/10 rounded-full blur-2xl group-hover:bg-radiant-gold/30 transition-all duration-1000"></div>
+              <Logo className="w-16 h-16 relative z-10" variant="gold" />
             </div>
             <div className="flex items-center md:flex-row-reverse gap-8 md:w-1/3 text-left md:text-right">
               <div className="w-14 h-14 bg-radiant-bg rounded-2xl flex items-center justify-center text-radiant-gold shadow-inner border border-radiant-champagne/10">

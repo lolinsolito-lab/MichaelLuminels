@@ -28,9 +28,9 @@ const Quote: React.FC = () => {
             transition={{ delay: 1 }}
             className="text-[11px] font-mono tracking-[0.8em] uppercase text-radiant-gold font-bold"
           >
-            Michael Jara
+            Michael Luminel
           </motion.div>
-          <div className="text-xl font-light text-radiant-muted uppercase tracking-[0.3em] italic">Founding Architect, Luminel Way</div>
+          <div className="text-xl font-light text-radiant-muted uppercase tracking-[0.5em] font-mono italic">Lifestyle Architect</div>
         </div>
 
         <motion.div 

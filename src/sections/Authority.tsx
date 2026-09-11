@@ -21,16 +21,16 @@ const Authority: React.FC = () => {
               <span className="text-[10px] font-mono tracking-[0.7em] text-radiant-gold uppercase font-bold italic">The Architect</span>
               <h3 className="text-8xl md:text-[11rem] font-serif text-radiant-text leading-[0.85] tracking-[-0.05em]">
                 Michael <br />
-                <span className="italic font-light text-radiant-muted">Jara.</span>
+                <span className="italic font-light text-radiant-muted">Luminel.</span>
               </h3>
             </div>
 
             <div className="space-y-12 text-xl md:text-2xl font-light text-radiant-muted leading-[1.6] tracking-wide font-sans text-justify italic">
               <p>
-                Dall'analisi del rigore forense nella <span className="text-radiant-text italic font-medium">Procura della Repubblica</span> alla direzione di complessi sistemi di dati in <span className="text-radiant-text font-medium">Capgemini</span>, Michael Jara ha distillato un protocollo di sovranità che non accetta compromessi.
+                Lifestyle Architect e mentore trasformazionale. Ha studiato la complessità dei flussi all'interno di grandi sistemi aziendali internazionali, distillando una legge fondamentale: le strutture rigide opprimono l'essere umano; solo i flussi fluidi lo elevano.
               </p>
               <p>
-                La sua missione non è la gestione del tempo, ma la progettazione del <span className="text-radiant-gold font-medium italic underline decoration-radiant-champagne/20">Silenzio Strategico</span>. Agisce come l'Architetto dei Sistemi Umani per coloro che intendono trasformare la propria attenzione in un patrimonio inalienabile.
+                La sua missione non è la gestione del tempo, ma la progettazione del <span className="text-radiant-gold font-medium italic underline decoration-radiant-champagne/20">Silenzio Strategico</span>. Agisce come Guida e Architetto dello Spirito per coloro che scelgono di trasformare la propria attenzione in un patrimonio inalienabile.
               </p>
               <div className="pt-12 flex gap-16 border-t border-radiant-champagne/10">
                  <div className="space-y-2">
@@ -54,12 +54,12 @@ const Authority: React.FC = () => {
             <div className="relative aspect-[4/5] rounded-[60px] overflow-hidden border border-radiant-champagne/10 grayscale hover:grayscale-0 transition-all duration-1000 shadow-pearl-skeuo group">
                <img 
                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000" 
-                 alt="Michael Jara"
+                 alt="Michael Luminel"
                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2000ms]"
                />
                <div className="absolute inset-0 bg-gradient-to-t from-radiant-bg/80 via-transparent to-transparent opacity-60"></div>
                <div className="absolute bottom-12 left-12 right-12">
-                  <p className="text-radiant-muted text-[9px] font-mono tracking-[0.5em] uppercase mb-4 italic">Michael Jara • Founding Architect</p>
+                  <p className="text-radiant-muted text-[9px] font-mono tracking-[0.5em] uppercase mb-4 italic">Michael Luminel • Lifestyle Architect</p>
                   <p className="text-radiant-text text-3xl font-serif italic leading-relaxed font-light">
                     "Il vero comando è progettare <br/> l'assenza di urgenza."
                   </p>

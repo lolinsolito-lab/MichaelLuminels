@@ -23,7 +23,7 @@ const AboutMe: React.FC = () => {
             <div className="aspect-[3/4] rounded-[60px] overflow-hidden border border-white/10 grayscale contrast-125 transition-all duration-1000 group-hover:grayscale-0 group-hover:contrast-100">
               <img 
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80" 
-                alt="Michael Jara - The Architect" 
+                alt="Michael Luminel - The Architect" 
                 className="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-radiant-text via-transparent to-transparent opacity-80"></div>
@@ -52,7 +52,7 @@ const AboutMe: React.FC = () => {
 
             <div className="space-y-10 text-xl md:text-2xl font-light text-white/40 leading-relaxed tracking-wide italic font-sans text-justify">
               <p>
-                Ho trascorso anni a studiare la complessità dei flussi e delle strutture organizzative all'interno di colossi globali come <span className="text-white font-medium italic underline decoration-radiant-gold/20">Capgemini</span>. Lì ho compreso una legge universale: le strutture rigide opprimono l'essere umano; solo i flussi fluidi lo elevano.
+                Ho trascorso anni a studiare la complessità dei flussi e delle strutture organizzative all'interno di colossi globali come <span className="text-white font-medium italic underline decoration-radiant-gold/20">sistemi aziendali internazionali</span>. Lì ho compreso una legge universale: le strutture rigide opprimono l'essere umano; solo i flussi fluidi lo elevano.
               </p>
               
               <p>
@@ -75,14 +75,14 @@ const AboutMe: React.FC = () => {
                   <Shield className="text-radiant-gold" size={24} strokeWidth={1} />
                 </div>
                 <h4 className="text-[11px] font-mono uppercase tracking-[0.4em] text-white font-bold italic">Rigore Forense</h4>
-                <p className="text-[9px] text-white/20 uppercase tracking-widest italic font-bold">Ex Procura della Repubblica</p>
+                <p className="text-[9px] text-white/20 uppercase tracking-widest italic font-bold">Lifestyle Architect</p>
               </div>
               <div className="space-y-4 group cursor-default">
                 <div className="p-4 bg-white/5 w-fit rounded-2xl group-hover:bg-radiant-gold/10 transition-colors">
                   <Database className="text-radiant-gold" size={24} strokeWidth={1} />
                 </div>
                 <h4 className="text-[11px] font-mono uppercase tracking-[0.4em] text-white font-bold italic">Architettura di Flusso</h4>
-                <p className="text-[9px] text-white/20 uppercase tracking-widest italic font-bold">Business Analyst · Capgemini</p>
+                <p className="text-[9px] text-white/20 uppercase tracking-widest italic font-bold">Sovereign Flow Systems</p>
               </div>
               <div className="space-y-4 group cursor-default">
                 <div className="p-4 bg-white/5 w-fit rounded-2xl group-hover:bg-radiant-gold/10 transition-colors">

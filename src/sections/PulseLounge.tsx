@@ -82,7 +82,7 @@ const PulseLounge: React.FC<PulseProps> = ({ onBack, onUpgrade }) => {
                       <MessageCircle size={18} />
                       <span className="text-[10px] font-mono uppercase tracking-widest font-bold italic">Discussione Riservata</span>
                    </div>
-                   <p className="text-[9px] font-mono text-radiant-muted/30 uppercase tracking-[0.3em] font-bold">Firmato: Michael Jara</p>
+                   <p className="text-[9px] font-mono text-radiant-muted/30 uppercase tracking-[0.3em] font-bold">Firmato: Michael Luminel</p>
                 </div>
               </motion.div>
             ))}

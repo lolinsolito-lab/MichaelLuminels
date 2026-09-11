@@ -26,7 +26,7 @@ const TheVault: React.FC<VaultProps> = ({ onBack }) => {
           <div className="flex items-center gap-10">
             <div className="text-right hidden md:block">
               <p className="text-[9px] font-mono text-radiant-gold uppercase tracking-[0.5em] font-bold italic">Sovereign Identity Verificata</p>
-              <p className="text-xl font-serif italic text-white/80">Michael Jara Architect</p>
+              <p className="text-xl font-serif italic text-white/80">Michael Luminel Architect</p>
             </div>
             <div className="w-14 h-14 rounded-2xl border border-radiant-gold/30 flex items-center justify-center bg-radiant-gold/5 shadow-[0_0_30px_rgba(212,175,55,0.1)]">
               <Shield size={24} className="text-radiant-gold" />
@@ -128,7 +128,7 @@ const TheVault: React.FC<VaultProps> = ({ onBack }) => {
             <div className="p-8 bg-radiant-gold/5 rounded-[40px] border border-radiant-gold/10 flex items-center gap-6">
                <div className="w-3 h-3 bg-radiant-gold rounded-full animate-pulse shadow-[0_0_10px_#D4AF37]"></div>
                <p className="text-xs font-light italic text-white/60">
-                 Michael Jara ha aggiornato il <span className="text-radiant-gold font-medium">Protocollo Visibility</span>.
+                 Michael Luminel ha aggiornato il <span className="text-radiant-gold font-medium">Protocollo Visibility</span>.
                </p>
             </div>
           </motion.div>
