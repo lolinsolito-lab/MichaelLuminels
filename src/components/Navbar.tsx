@@ -47,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ onAccessClick }) => {
   return (
     <nav className={`fixed top-0 left-0 w-full z-[150] transition-all duration-700 ${scrolled ? 'py-4' : 'py-8'}`}>
       <div className="max-w-7xl mx-auto px-6">
-        <div className={`relative flex items-center justify-between px-8 py-5 rounded-full transition-all duration-1000 ${scrolled ? 'bg-white/80 backdrop-blur-3xl border border-radiant-champagne/20 shadow-trayce-glow' : 'bg-transparent'}`}>
+        <div className={`relative flex items-center justify-between px-8 py-5 rounded-full transition-all duration-1000 ${scrolled ? 'bg-[#0B0B0C]/80 backdrop-blur-3xl border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.5)]' : 'bg-transparent border border-transparent'}`}>
           
           {/* Logo Section */}
           <div 
@@ -63,7 +63,7 @@ const Navbar: React.FC<NavbarProps> = ({ onAccessClick }) => {
               <button 
                 key={link.name} 
                 onClick={() => scrollToSection(link.id)}
-                className="text-[9px] font-mono uppercase tracking-[0.3em] text-radiant-muted hover:text-radiant-gold transition-colors font-bold italic"
+                className={`text-[9px] font-mono uppercase tracking-[0.3em] transition-colors font-bold italic ${scrolled ? 'text-white/60 hover:text-white' : 'text-white/60 hover:text-radiant-gold'}`}
               >
                 {link.name}
               </button>
@@ -74,16 +74,16 @@ const Navbar: React.FC<NavbarProps> = ({ onAccessClick }) => {
           <div className="hidden md:flex items-center gap-8">
             <button 
               onClick={onAccessClick}
-              className="text-[9px] font-mono uppercase tracking-[0.3em] text-radiant-gold hover:text-radiant-text transition-colors flex items-center gap-2 font-bold italic"
+              className={`text-[9px] font-mono uppercase tracking-[0.3em] transition-colors flex items-center gap-2 font-bold italic ${scrolled ? 'text-radiant-gold hover:text-white' : 'text-radiant-gold hover:text-white'}`}
             >
               <User size={12} /> Area Membri
             </button>
             <Magnetic>
               <button 
                 onClick={() => scrollToSection('audit-start')}
-                className="interactive px-10 py-4 bg-radiant-text text-white text-[9px] font-mono uppercase tracking-[0.4em] rounded-full transition-all duration-500 shadow-[0_15px_30px_rgba(28,25,23,0.1)] hover:shadow-[0_20px_40px_rgba(28,25,23,0.25)] font-bold flex items-center gap-3 overflow-hidden group"
+                className="interactive px-10 py-4 bg-white/10 text-white text-[9px] font-mono uppercase tracking-[0.4em] rounded-full transition-all duration-500 hover:bg-white hover:text-black border border-white/20 font-bold flex items-center gap-3 overflow-hidden group"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_2s_infinite]" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_2s_infinite]" />
                 <span className="relative z-10">Inizia Audit</span>
               </button>
             </Magnetic>
@@ -91,7 +91,7 @@ const Navbar: React.FC<NavbarProps> = ({ onAccessClick }) => {
 
           {/* Mobile Toggle */}
           <button 
-            className="md:hidden text-radiant-text"
+            className="md:hidden text-white"
             onClick={() => setMobileMenu(!mobileMenu)}
           >
             {mobileMenu ? <X size={24} /> : <Menu size={24} />}
